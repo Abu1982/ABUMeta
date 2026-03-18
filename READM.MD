@@ -1,11 +1,11 @@
 # ABUMeta 开源演示版
 
-这是从 ABU 主开发仓导出的“可演示开源版”。
+一个可演示的类人自治 Agent 开源副本，保留记忆、心理、决策、抓取与治理骨架，适合作为 AGI 工程化原型与研究型演示项目。
 
 ## 当前版本
 
-- 展示版本：`v1.0.01`
-- 内部版本：`1.0.1`
+- 展示版本：`v1.0.02`
+- 内部版本：`1.0.2`
 - 版本文件：`VERSION`、`version.json`、`src/__init__.py`
 - 开源许可证：`MIT`，见 `LICENSE`
 
@@ -14,6 +14,13 @@
 - 保留核心源码结构，方便阅读与二次开发
 - 保留最小可演示能力，避免依赖主仓私有运行数据
 - 不包含主开发仓中的数据库、缓存、日志、报告和历史运行产物
+
+## 快速开始
+
+```powershell
+./一键安装依赖.bat
+./运行演示.bat
+```
 
 ## 当前版本定位
 
@@ -129,3 +136,8 @@
 - 安全策略：`SECURITY.md`
 - Issue 模板：`.github/ISSUE_TEMPLATE/`
 - Pull Request 模板：`.github/PULL_REQUEST_TEMPLATE.md`
+
+## GitHub 首发元数据
+
+- 仓库元数据建议：`GITHUB_REPOSITORY_METADATA.MD`
+- 本次发布说明：`RELEASE_NOTES_v1.0.02.MD`

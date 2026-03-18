@@ -1,10 +1,10 @@
 {
-  "display_version": "v1.0.01",
-  "internal_version": "1.0.1",
-  "git_tag": "v1.0.01",
+  "display_version": "v1.0.02",
+  "internal_version": "1.0.2",
+  "git_tag": "v1.0.02",
   "release_channel": "open-source-demo",
   "released_at": "2026-03-18 18:22",
-  "release_name": "ABUMeta GitHub 首发准备版",
+  "release_name": "ABUMeta GitHub 最终发布前审计版",
   "license": "MIT",
-  "notes": "在 v1.0.0 基线上完成依赖拆分与 GitHub 首发社区文件补齐，并建立新的 Git 回滚锚点。"
+  "notes": "在 v1.0.01 基线上补齐 GitHub 元数据、发布说明与最终公开前审计收口，并建立新的 Git 回滚锚点。"
 }

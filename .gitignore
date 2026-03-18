@@ -1,5 +1,6 @@
 .env
 .env.*
+.env.local
 .venv/
 .venv-gpu/
 __pycache__/
@@ -9,6 +10,8 @@ __pycache__/
 .mypy_cache/
 .coverage
 htmlcov/
+.vscode/
+.idea/
 .claude/
 .claude_agent_run.log
 .abu.heartbeat

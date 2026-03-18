@@ -4,8 +4,8 @@
 
 ## 当前版本
 
-- 展示版本：`v1.0.02`
-- 内部版本：`1.0.2`
+- 展示版本：`v1.0.03`
+- 内部版本：`1.0.3`
 - 版本文件：`VERSION`、`version.json`、`src/__init__.py`
 - 开源许可证：`MIT`，见 `LICENSE`
 
@@ -138,7 +138,7 @@
 ## GitHub 首发元数据
 
 - 仓库元数据建议：`GITHUB_REPOSITORY_METADATA.MD`
-- 本次发布说明：`RELEASE_NOTES_v1.0.02.MD`
+- 本次发布说明：`RELEASE_NOTES_v1.0.03.MD`
 
 ## 注意
 

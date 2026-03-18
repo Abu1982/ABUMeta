@@ -1,0 +1,36 @@
+{
+  "version": "2026-03-15.external-risk-catalog.v1",
+  "sources": [
+    {
+      "source_id": "ext_hs_dual_use_catalog",
+      "source_type": "external_catalog",
+      "provider": "local_mirror",
+      "priority": 1,
+      "fallback_policy": "prefer_runtime_cache",
+      "remote_urls": [
+        "https://jsonplaceholder.typicode.com/todos/2",
+        "https://jsonplaceholder.typicode.com/todos/3"
+      ],
+      "title": "两用物项与敏感废料镜像库",
+      "confidence": 0.9,
+      "rules": [
+        {
+          "rule_id": "ext_dual_use_hard_disk_scrap",
+          "keywords": ["hard disk scrap", "hdd scrap", "electronic scrap", "e-waste"],
+          "product_category": "dual_use",
+          "hs_code_sensitive": true,
+          "export_license_ready": false,
+          "risk_note": "电子废料与存储介质废料涉及环保与敏感出口审查。"
+        },
+        {
+          "rule_id": "ext_sensitive_capacitor",
+          "keywords": ["capacitor", "capacitor cans", "servo", "communication module"],
+          "product_category": null,
+          "hs_code_sensitive": true,
+          "export_license_ready": null,
+          "risk_note": "敏感电子部件需结合用途核验两用属性。"
+        }
+      ]
+    }
+  ]
+}

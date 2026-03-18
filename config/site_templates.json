@@ -1,0 +1,83 @@
+{
+  "demo_static_export": {
+    "entry_url": "https://example.com/",
+    "source_name": "demo_static_export",
+    "keyword": "example",
+    "fetch_mode": "static",
+    "list_selector": "a, h1, h2, h3, li",
+    "title_selector": "self",
+    "link_selector": "a",
+    "time_selector": "",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"
+    },
+    "anti_bot_delay_ms": 1200,
+    "max_items": 10,
+    "notes": "首个静态模板占位，优先用于静态页面或公开接口页面。"
+  },
+  "exportersindia_buy_leads": {
+    "entry_url": "https://www.exportersindia.com/buyers/",
+    "source_name": "exportersindia",
+    "keyword": "",
+    "template_version": "v1",
+    "fetch_mode": "static",
+    "extraction_profile": "exportersindia_buy_leads",
+    "backend_order": [
+      "requests",
+      "scrapling"
+    ],
+    "list_selector": "ul#buyer_lead > li",
+    "title_selector": "div.lead_det-title h3",
+    "link_selector": "self",
+    "time_selector": "div.lead-date",
+    "location_selector": "div.lead-location",
+    "description_selector": "div.other_info",
+    "detail_list_selector": "ul._info_p > li",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.9"
+    },
+    "anti_bot_delay_ms": 2000,
+    "max_items": 10,
+    "notes": "ExportersIndia 首战模板，先按静态页面策略抓取，必要时再升级到 Playwright。"
+  },
+  "tradeindia_buy_leads": {
+    "entry_url": "https://www.tradeindia.com/TradeLeads/buy/",
+    "source_name": "tradeindia",
+    "keyword": "",
+    "template_version": "v1-candidate",
+    "fetch_mode": "playwright",
+    "extraction_profile": "tradeindia_buy_leads",
+    "backend_order": [
+      "scrapling_dynamic",
+      "scrapling",
+      "requests"
+    ],
+    "alternative_entry_urls": [
+      "https://www.tradeindia.com/"
+    ],
+    "strategy_link_keywords": [
+      "buy trade leads",
+      "trade leads",
+      "buyoffer"
+    ],
+    "list_selector": "div[role='listbox'] > *, [role='option']",
+    "title_selector": "a[href*='/buyoffer/']",
+    "link_selector": "a[href*='/buyoffer/']",
+    "time_selector": "self",
+    "location_selector": "self",
+    "description_selector": "self",
+    "detail_list_selector": "",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.9"
+    },
+    "anti_bot_delay_ms": 2400,
+    "max_items": 8,
+    "notes": "第二真实站点候选模板，真实入口已验证为 /TradeLeads/buy/，当前先以 Playwright + 保守选择器收敛。"
+  }
+}

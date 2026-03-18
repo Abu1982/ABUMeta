@@ -1,0 +1,74 @@
+[
+  {
+    "anchor": "未雨绸缪",
+    "category": "hardware",
+    "priority": 10,
+    "keywords": ["显存", "gpu", "资源", "过载", "缓存", "削峰", "负载"]
+  },
+  {
+    "anchor": "见微知著",
+    "category": "learning",
+    "priority": 10,
+    "keywords": ["日志", "根因", "复盘", "瓶颈", "优化", "观察"]
+  },
+  {
+    "anchor": "知足不辱",
+    "category": "survival",
+    "priority": 10,
+    "keywords": ["知足", "知止", "边界", "止贪", "克制", "收束"]
+  },
+  {
+    "anchor": "谋定后动",
+    "category": "finance",
+    "priority": 10,
+    "keywords": ["交易", "止损", "现金", "风险", "根因", "回撤"]
+  },
+  {
+    "anchor": "学以致用",
+    "category": "learning",
+    "priority": 10,
+    "keywords": ["交付", "输出", "结果", "复用", "模式", "落地"]
+  },
+  {
+    "anchor": "无为而治",
+    "category": "culture",
+    "priority": 10,
+    "keywords": ["无为", "少扰", "减法", "克制", "低能耗", "简化"]
+  },
+  {
+    "anchor": "大道至简",
+    "category": "culture",
+    "priority": 10,
+    "keywords": ["大道", "至简", "极简", "留白", "节制", "简洁"]
+  },
+  {
+    "anchor": "兼收并蓄",
+    "category": "culture",
+    "priority": 10,
+    "keywords": ["兼收", "并蓄", "开源", "协作", "包容", "共享"]
+  },
+  {
+    "anchor": "格物致知",
+    "category": "culture",
+    "priority": 10,
+    "keywords": ["格物", "致知", "求真", "文化", "经典", "事实"]
+  },
+  {
+    "anchor": "经世致用",
+    "category": "culture",
+    "priority": 10,
+    "keywords": ["经世", "致用", "治理", "现实", "落地", "务实"]
+  },
+  {
+    "anchor": "择邻而处",
+    "category": "learning",
+    "priority": 9,
+    "keywords": ["择邻", "信源", "高信", "筛选", "来源", "择优"]
+  },
+  {
+    "anchor": "知行合一",
+    "category": "learning",
+    "priority": 7,
+    "keywords": ["项目", "介绍", "实现", "方案", "执行", "经验"]
+  }
+]

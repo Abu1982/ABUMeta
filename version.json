@@ -1,0 +1,10 @@
+{
+  "display_version": "v1.0.0",
+  "internal_version": "1.0.0",
+  "git_tag": "v1.0.0",
+  "release_channel": "open-source-demo",
+  "released_at": "2026-03-18 18:22",
+  "release_name": "ABUMeta 开源演示版基线",
+  "license": "MIT",
+  "notes": "这是从主开发仓导出的首个可演示开源基线版本，并补齐了正式许可证与 Git 版本锚点。"
+}

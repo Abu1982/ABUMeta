@@ -1,0 +1,33 @@
+{
+  "version": "2026-03-15.external-risk-catalog.v1.sanctions",
+  "sources": [
+    {
+      "source_id": "ext_sanctions_watch_catalog",
+      "source_type": "external_watchlist",
+      "provider": "local_mirror",
+      "priority": 2,
+      "fallback_policy": "prefer_runtime_cache",
+      "remote_url": "https://jsonplaceholder.typicode.com/todos/1",
+      "title": "制裁与敏感贸易观察镜像库",
+      "confidence": 0.88,
+      "rules": [
+        {
+          "rule_id": "ext_sanctions_dual_use_module",
+          "keywords": ["communication module", "servo", "industrial control board"],
+          "product_category": "dual_use",
+          "hs_code_sensitive": true,
+          "export_license_ready": false,
+          "risk_note": "涉及制裁观察及两用属性复核。"
+        },
+        {
+          "rule_id": "ext_watch_restricted_scrap",
+          "keywords": ["battery scrap", "pcb scrap", "electronic scrap"],
+          "product_category": "dual_use",
+          "hs_code_sensitive": true,
+          "export_license_ready": false,
+          "risk_note": "受限制废料贸易需额外许可与去向审查。"
+        }
+      ]
+    }
+  ]
+}

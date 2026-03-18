@@ -1,0 +1,15 @@
+requests>=2.32.0
+beautifulsoup4>=4.12.3
+lxml>=5.2.1
+sqlalchemy>=2.0.48
+pydantic>=2.11.0
+pydantic-settings>=2.2.1
+loguru>=0.7.3
+psutil>=5.9.8
+numpy>=1.26.4
+APScheduler>=3.11.0
+python-dotenv>=1.0.1
+python-dateutil>=2.9.0.post0
+openpyxl>=3.1.5
+pytest>=8.1.1
+pytest-asyncio>=0.23.4

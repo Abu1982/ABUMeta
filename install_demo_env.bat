@@ -24,10 +24,11 @@ if not exist ".venv\Scripts\python.exe" (
 
 call ".venv\Scripts\activate.bat"
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-demo.txt
 
 echo.
 echo [DONE] Base demo dependencies installed.
 echo Run install_optional_extras.bat for optional browser/vector features.
+echo Run python -m pip install -r requirements-dev.txt for test/dev dependencies.
 if /i "%ABU_NO_PAUSE%"=="1" exit /b 0
 pause

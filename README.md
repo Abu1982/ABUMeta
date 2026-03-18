@@ -4,8 +4,8 @@
 
 ## 当前版本
 
-- 展示版本：`v1.0.0`
-- 内部版本：`1.0.0`
+- 展示版本：`v1.0.01`
+- 内部版本：`1.0.1`
 - 版本文件：`VERSION`、`version.json`、`src/__init__.py`
 - 开源许可证：`MIT`，见 `LICENSE`
 
@@ -39,11 +39,17 @@
 它会自动：
 
 - 创建 `.venv`
-- 安装基础演示依赖
+- 安装 `requirements-demo.txt` 基础演示依赖
 
 如果你需要动态抓取、向量检索或浏览器增强能力，再执行：
 
 - `安装可选增强依赖.bat`
+
+如果你需要运行测试或参与开发，再执行：
+
+```powershell
+.\.venv\Scripts\python -m pip install -r requirements-dev.txt
+```
 
 ## 一键演示
 
@@ -86,7 +92,13 @@
 
 ## 第三方依赖说明
 
-基础依赖保留常见 Python 组件，如：
+依赖已拆分为三层：
+
+- `requirements-demo.txt`
+- `requirements-optional.txt`
+- `requirements-dev.txt`
+
+基础演示依赖保留常见 Python 组件，如：
 
 - `requests`
 - `beautifulsoup4`
@@ -108,6 +120,13 @@
 - 第三方依赖与开源前审计：`THIRD_PARTY_NOTICES.md`
 - 当前版本变更记录：`更新日志.MD`
 - 许可证建议：`开源许可证建议.MD`
+
+## GitHub 社区文件
+
+- 贡献指南：`CONTRIBUTING.md`
+- 安全策略：`SECURITY.md`
+- Issue 模板：`.github/ISSUE_TEMPLATE/`
+- Pull Request 模板：`.github/PULL_REQUEST_TEMPLATE.md`
 
 ## 注意
 

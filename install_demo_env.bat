@@ -9,7 +9,7 @@ if %errorlevel%==0 (
 ) else (
     where py >nul 2>nul
     if %errorlevel%==0 (
-        set "PY_CMD=py -3.13"
+        set "PY_CMD=py -3"
     ) else (
         echo [ERROR] No Python interpreter found.
         if /i "%ABU_NO_PAUSE%"=="1" exit /b 1

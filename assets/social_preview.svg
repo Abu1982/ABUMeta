@@ -1,0 +1,72 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="1220" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1722"/>
+      <stop offset="1" stop-color="#162235"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="110" y1="90" x2="680" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="820" y1="120" x2="1120" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39C6B4"/>
+      <stop offset="1" stop-color="#F3B94C"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1280" height="640" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="screen"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" rx="32" fill="url(#bg)"/>
+  <rect x="64" y="64" width="1152" height="512" rx="28" fill="rgba(255,255,255,0.02)" stroke="rgba(142,163,183,0.15)"/>
+
+  <g opacity="0.18">
+    <path d="M740 132C900 52 1058 80 1160 182" stroke="#39C6B4" stroke-width="2"/>
+    <path d="M714 210C880 126 1046 172 1148 294" stroke="#8EA3B7" stroke-width="1.5"/>
+    <path d="M694 298C874 226 1014 282 1106 414" stroke="#F3B94C" stroke-width="1.5"/>
+    <path d="M724 390C890 330 1004 374 1080 494" stroke="#39C6B4" stroke-width="1.5"/>
+  </g>
+
+  <g>
+    <rect x="98" y="104" width="562" height="432" rx="26" fill="url(#panel)" stroke="rgba(142,163,183,0.18)"/>
+    <text x="130" y="180" fill="#F5F7FA" font-size="92" font-weight="700" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif">ABUMeta</text>
+    <text x="136" y="238" fill="#39C6B4" font-size="27" font-weight="600" letter-spacing="2.5" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif">BILINGUAL AUTONOMOUS AGENT DEMO</text>
+    <text x="136" y="286" fill="#F5F7FA" font-size="30" font-weight="500" font-family="Microsoft YaHei, 'Noto Sans SC', 'Segoe UI', sans-serif">双语自治 Agent 演示版</text>
+    <text x="136" y="346" fill="#8EA3B7" font-size="24" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif">Memory / Psyche / Decision / Execution / Governance</text>
+    <text x="136" y="410" fill="#D9E1E8" font-size="23" font-family="Microsoft YaHei, 'Noto Sans SC', 'Segoe UI', sans-serif">面向研究、演示与二次开发的类人自治架构</text>
+    <text x="136" y="452" fill="#8EA3B7" font-size="20" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif">Open-Source Demo / MIT / Windows + Linux / Cross-Platform Smoke</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <path d="M792 210L914 146L1034 214L1078 338L1004 458L864 480L756 392L792 210Z" fill="rgba(255,255,255,0.02)" stroke="url(#accent)" stroke-width="3"/>
+    <path d="M864 480L914 146" stroke="rgba(245,247,250,0.25)" stroke-width="2"/>
+    <path d="M756 392L1034 214" stroke="rgba(245,247,250,0.18)" stroke-width="2"/>
+    <path d="M792 210L1078 338" stroke="rgba(245,247,250,0.14)" stroke-width="2"/>
+
+    <circle cx="914" cy="146" r="16" fill="#39C6B4"/>
+    <circle cx="1034" cy="214" r="14" fill="#F3B94C"/>
+    <circle cx="1078" cy="338" r="14" fill="#39C6B4"/>
+    <circle cx="1004" cy="458" r="13" fill="#8EA3B7"/>
+    <circle cx="864" cy="480" r="15" fill="#F3B94C"/>
+    <circle cx="756" cy="392" r="13" fill="#39C6B4"/>
+    <circle cx="792" cy="210" r="12" fill="#8EA3B7"/>
+  </g>
+
+  <g fill="#F5F7FA" font-size="16" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif">
+    <text x="882" y="110">MEMORY</text>
+    <text x="1044" y="204">PSYCHE</text>
+    <text x="1094" y="340">DECISION</text>
+    <text x="1008" y="496">EXECUTION</text>
+    <text x="822" y="526">GOVERNANCE</text>
+  </g>
+
+  <g>
+    <rect x="96" y="556" width="1088" height="1" fill="rgba(142,163,183,0.22)"/>
+    <text x="110" y="590" fill="#8EA3B7" font-size="20" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif">RESEARCH</text>
+    <text x="262" y="590" fill="#8EA3B7" font-size="20" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif">READABILITY</text>
+    <text x="462" y="590" fill="#8EA3B7" font-size="20" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif">DEMO</text>
+    <text x="605" y="590" fill="#8EA3B7" font-size="20" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif">CROSS-PLATFORM</text>
+    <text x="892" y="590" fill="#8EA3B7" font-size="20" font-family="Bahnschrift, 'Segoe UI', Arial, sans-serif">OPEN SOURCE</text>
+  </g>
+</svg>

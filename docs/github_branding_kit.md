@@ -122,3 +122,9 @@ This document provides a ready-to-use branding package for the public GitHub pre
 - Keep GitHub About text shorter than the README opening paragraph
 - Use the Social Preview image to communicate architecture and seriousness, not feature overload
 - Keep the pinned-repo copy concise so it still reads well on profile cards
+
+## 8. Included Draft Assets / 已附带的预览素材
+
+- SVG source: `assets/social_preview.svg`
+- PNG upload draft: `assets/social_preview.png`
+- PNG generator: `scripts/generate_social_preview.py`

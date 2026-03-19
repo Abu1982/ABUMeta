@@ -29,7 +29,9 @@ data/chroma_db/
 data/logs/*.log
 data/reports/*.json
 data/reports/*.jsonl
+data/reports/*.md
 data/reports/_runtime_logs/
+data/action_journal.jsonl
 data/cache/*.json
 data/cache/*.html
 data/inquiries/*
@@ -37,3 +39,14 @@ data/inquiries/*
 data/models/*
 !data/models/.gitkeep
 evolution_map.json
+
+# Private release-prep notes kept local only
+READM.MD
+GITHUB_REPOSITORY_METADATA.MD
+RELEASE_NOTES_v1.0.02.MD
+RELEASE_NOTES_v1.0.03.MD
+RELEASE_NOTES_v1.0.04.MD
+decision_manifesto.md
+公开前最终复核清单.MD
+开源许可证建议.MD
+首发操作步骤.MD

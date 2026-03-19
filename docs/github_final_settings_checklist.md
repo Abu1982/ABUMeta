@@ -124,8 +124,8 @@ Use these when pinning the repo on your GitHub profile.
 - [x] Issue template contact link points to security policy
 - [ ] Enable Dependabot alerts
 - [x] Enable Dependabot security updates
-- [ ] Enable secret scanning if available
-- [ ] Enable push protection for secrets if available
+- [x] Enable secret scanning if available
+- [x] Enable push protection for secrets if available
 - [ ] Review GitHub Security tab after first public exposure
 
 ### Repository Hygiene / 仓库卫生
@@ -162,6 +162,6 @@ Use these when pinning the repo on your GitHub profile.
 ## 10. Manual Items That Still Require GitHub UI / 仍需在 GitHub 页面手工完成的项目
 
 - Upload the Social Preview image
-- Decide whether Discussions should be enabled
-- Enable advanced Security features if your account plan allows them
+- Optionally configure Discussions categories and publish a welcome post
+- Review Dependabot alerts status in the Security tab
 - Optionally pin the repository on your profile

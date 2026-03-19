@@ -1,0 +1,74 @@
+name: Cross Platform Smoke
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  smoke:
+    name: ${{ matrix.os }} / Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ['3.13']
+
+    env:
+      ABU_NO_PAUSE: '1'
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: |
+            requirements-demo.txt
+            requirements-dev.txt
+            requirements-optional.txt
+
+      - name: Install base demo environment on Linux
+        if: runner.os == 'Linux'
+        run: bash install_demo_env.sh
+
+      - name: Install dev environment on Linux
+        if: runner.os == 'Linux'
+        run: bash install_dev_env.sh
+
+      - name: Run demo on Linux
+        if: runner.os == 'Linux'
+        run: bash run_demo.sh
+
+      - name: Run smoke tests on Linux
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          . .venv/bin/activate
+          python -m pytest tests/test_smoke_demo.py
+
+      - name: Install base demo environment on Windows
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: install_demo_env.bat
+
+      - name: Install dev environment on Windows
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: install_dev_env.bat
+
+      - name: Run demo on Windows
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: run_demo.bat
+
+      - name: Run smoke tests on Windows
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: .venv\Scripts\python -m pytest tests\test_smoke_demo.py

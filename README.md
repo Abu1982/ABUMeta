@@ -17,9 +17,18 @@
 
 ## 快速开始
 
+Windows:
+
 ```powershell
 ./一键安装依赖.bat
 ./运行演示.bat
+```
+
+Linux:
+
+```bash
+bash install_demo_env.sh
+bash run_demo.sh
 ```
 
 ## 当前版本定位
@@ -27,6 +36,12 @@
 - 本目录是独立导出的演示副本
 - 与原始私有开发环境隔离
 - 适合放到 GitHub 作为公开演示项目
+
+## 环境前提
+
+- Windows：安装 Python 3.11+，并确保 `python` 或 `py` 可在命令行使用
+- Linux：安装 Python 3.11+、`python3-venv`、`python3-pip`，并确保 `python3` 可在命令行使用
+- 可选增强能力涉及 `playwright`、`docker`、向量模型与浏览器依赖，建议按需安装
 
 ## 目录说明
 
@@ -39,9 +54,16 @@
 
 ## 一键安装
 
-双击运行根目录下：
+Windows：双击运行根目录下：
 
 - `一键安装依赖.bat`
+- `install_demo_env.bat`
+
+Linux：在仓库根目录执行：
+
+```bash
+bash install_demo_env.sh
+```
 
 它会自动：
 
@@ -51,6 +73,19 @@
 如果你需要动态抓取、向量检索或浏览器增强能力，再执行：
 
 - `安装可选增强依赖.bat`
+- `install_optional_extras.bat`
+
+或在 Linux 上执行：
+
+```bash
+bash install_optional_extras.sh
+```
+
+说明：在 Debian / Ubuntu 等 Linux 发行版上，如果 Playwright 缺少系统依赖，可追加执行：
+
+```bash
+sudo .venv/bin/python -m playwright install --with-deps chromium
+```
 
 如果你需要运行测试或参与开发，再执行：
 
@@ -58,11 +93,24 @@
 .\.venv\Scripts\python -m pip install -r requirements-dev.txt
 ```
 
+或直接执行：
+
+```bash
+bash install_dev_env.sh
+```
+
 ## 一键演示
 
 安装完成后，可直接运行：
 
 - `运行演示.bat`
+- `run_demo.bat`
+
+Linux：
+
+```bash
+bash run_demo.sh
+```
 
 它会执行：
 
@@ -77,8 +125,16 @@
 
 ## 运行测试
 
+Windows:
+
 ```powershell
 .\.venv\Scripts\python -m pytest tests
+```
+
+Linux:
+
+```bash
+. .venv/bin/activate && python -m pytest tests
 ```
 
 ## 开源说明
@@ -143,4 +199,5 @@
 ## 注意
 
 - Windows 快捷方式仅保留本地使用，不建议作为公开仓库内容提交
+- Linux 一键脚本可直接通过 `bash <script>.sh` 运行，不依赖额外工具链
 - 运行过程中生成的日志、报告、行动账本和缓存默认不应进入 Git

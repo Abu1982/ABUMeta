@@ -10,11 +10,23 @@
 
 ## 本地开发建议流程
 
-1. 运行 `一键安装依赖.bat`
+1. 安装基础环境：
+
+```text
+Windows: 一键安装依赖.bat 或 install_demo_env.bat
+Linux:   bash install_demo_env.sh
+```
+
 2. 如需测试与开发工具，再执行：
 
 ```powershell
 .\.venv\Scripts\python -m pip install -r requirements-dev.txt
+```
+
+或在 Linux / macOS 上执行：
+
+```bash
+bash install_dev_env.sh
 ```
 
 3. 运行 smoke 测试：
@@ -37,7 +49,6 @@
 如果你的改动会影响使用方式，请同步更新：
 
 - `README.md`
-- `READM.MD`
 - 必要时更新 `更新日志.MD`
 
 ## Issue 与 Pull Request

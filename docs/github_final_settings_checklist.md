@@ -112,7 +112,7 @@ Use these when pinning the repo on your GitHub profile.
 
 ### Checklist / 检查项
 
-- [ ] Discussions enabled
+- [x] Discussions enabled
 - [ ] Categories configured
 - [ ] One welcome post published if community interaction is expected
 
@@ -123,7 +123,7 @@ Use these when pinning the repo on your GitHub profile.
 - [x] `SECURITY.md` exists
 - [x] Issue template contact link points to security policy
 - [ ] Enable Dependabot alerts
-- [ ] Enable Dependabot security updates
+- [x] Enable Dependabot security updates
 - [ ] Enable secret scanning if available
 - [ ] Enable push protection for secrets if available
 - [ ] Review GitHub Security tab after first public exposure
@@ -154,9 +154,9 @@ Use these when pinning the repo on your GitHub profile.
 
 - [ ] Open repository home page in logged-out mode
 - [ ] Confirm README renders correctly in desktop and mobile layouts
-- [ ] Confirm Release page is visible and readable
-- [ ] Confirm Actions page shows latest green workflow run
-- [ ] Confirm no runtime data appears in the file tree
+- [x] Confirm Release page is visible and readable
+- [x] Confirm Actions page shows latest green workflow run
+- [x] Confirm no runtime data appears in the file tree
 - [ ] Confirm Social Preview has been uploaded manually
 
 ## 10. Manual Items That Still Require GitHub UI / 仍需在 GitHub 页面手工完成的项目
